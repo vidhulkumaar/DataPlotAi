@@ -1,0 +1,16 @@
+.env
+__pycache__/
+*.pyc
+node_modules/
+.DS_Store
+backend/venv/
+backend/.venv/
+*.log
+backend_logs_temp.txt
+backend_logs_utf8.txt
+backend_full_logs.txt
+debug_output.txt
+debug_output_2.txt
+debug_output_3.txt
+results.txt
+model_test_report.txt

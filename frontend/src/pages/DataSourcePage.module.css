@@ -1,0 +1,131 @@
+.header { margin-bottom: 24px; }
+.title { font-size: 20px; font-weight: 600; color: var(--gray-900); letter-spacing: -0.02em; }
+.sub { font-size: 13px; color: var(--gray-500); margin-top: 3px; }
+
+.modeRow {
+  display: flex; gap: 4px; padding: 4px;
+  background: var(--surface-2); border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  width: fit-content; margin-bottom: 24px;
+}
+.modeBtn {
+  display: flex; align-items: center; gap: 7px;
+  padding: 8px 18px; border-radius: var(--radius-md);
+  font-size: 13px; font-weight: 500; border: none;
+  background: none; color: var(--gray-500);
+  transition: all var(--transition);
+}
+.modeBtn:hover { color: var(--gray-800); }
+.modeBtnActive {
+  background: var(--white); color: var(--gray-900);
+  border: 1px solid var(--border); box-shadow: var(--shadow-sm);
+}
+
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+
+/* Dropzone */
+.dropzone {
+  border: 2px dashed var(--border-strong); border-radius: var(--radius-xl);
+  padding: 48px 24px; text-align: center; cursor: pointer;
+  transition: all var(--transition); background: var(--white);
+}
+.dropzone:hover { border-color: var(--navy-400); background: var(--navy-50); }
+.dropzoneActive { border-color: var(--navy-500); background: var(--navy-50); }
+.dropzoneUploading { pointer-events: none; opacity: 0.7; }
+.dzIcon {
+  width: 52px; height: 52px; border-radius: var(--radius-lg);
+  background: var(--surface-2); border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 14px; color: var(--gray-400);
+}
+.dzTitle { font-size: 15px; font-weight: 500; color: var(--gray-800); margin-bottom: 4px; }
+.dzSub { font-size: 13px; color: var(--gray-500); margin-bottom: 16px; }
+.tagRow { display: flex; gap: 6px; justify-content: center; flex-wrap: wrap; }
+.tag {
+  padding: 3px 10px; background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); font-size: 11px; color: var(--gray-600); font-weight: 500;
+}
+.sizeNote { font-size: 11px; color: var(--gray-400); margin-top: 8px; text-align: center; }
+
+/* Info card */
+.card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 20px;
+}
+.cardTitle { font-size: 13px; font-weight: 500; color: var(--gray-800); margin-bottom: 14px; }
+.infoStep {
+  display: flex; gap: 12px; align-items: flex-start;
+  padding: 10px 0; border-bottom: 1px solid var(--border);
+}
+.infoStep:last-child { border-bottom: none; }
+.infoNum {
+  width: 22px; height: 22px; border-radius: 50%; background: var(--navy-800);
+  color: #fff; font-size: 10px; font-weight: 600;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.infoTitle { font-size: 12px; font-weight: 500; color: var(--gray-800); }
+.infoDesc { font-size: 11px; color: var(--gray-500); margin-top: 2px; line-height: 1.5; }
+
+/* DB selector */
+.dbLabel { font-size: 12px; font-weight: 500; color: var(--gray-700); margin-bottom: 8px; }
+.dbGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 16px; }
+.dbCard {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 14px; background: var(--white);
+  border: 1px solid var(--border); border-radius: var(--radius-lg);
+  cursor: pointer; transition: all var(--transition); text-align: left;
+  position: relative;
+}
+.dbCard:hover { border-color: var(--navy-400); background: var(--navy-50); }
+.dbCardSelected { border-color: var(--navy-500); background: var(--navy-50); }
+.dbEmoji { font-size: 20px; }
+.dbName { font-size: 13px; font-weight: 500; color: var(--gray-800); flex: 1; }
+.dbCheck { color: var(--navy-500); }
+
+/* Connect form */
+.connForm { background: var(--surface-1); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+.formRow { display: flex; flex-direction: column; gap: 4px; }
+.formRow2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.fieldLabel { font-size: 11px; font-weight: 500; color: var(--gray-600); }
+.textarea {
+  padding: 8px 10px; border-radius: var(--radius-md); border: 1px solid var(--border);
+  font-size: 12px; font-family: var(--font-mono); color: var(--gray-900);
+  background: var(--white); resize: vertical; outline: none; width: 100%;
+}
+.textarea:focus { border-color: var(--navy-400); }
+
+.testOk { display:flex; align-items:center; gap:6px; font-size:12px; color: var(--success); background: var(--success-bg); padding:8px 12px; border-radius: var(--radius-md); }
+.testErr { display:flex; align-items:center; gap:6px; font-size:12px; color: var(--danger); background: var(--danger-bg); padding:8px 12px; border-radius: var(--radius-md); }
+
+.btnRow { display: flex; gap: 8px; }
+.testBtn {
+  display: flex; align-items: center; gap: 6px;
+  padding: 9px 16px; background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--radius-md); font-size: 13px; font-weight: 500;
+  color: var(--gray-700); transition: all var(--transition);
+}
+.testBtn:hover { background: var(--surface-2); }
+.testBtn:disabled { opacity: 0.6; }
+.connectBtn {
+  display: flex; align-items: center; gap: 6px; flex: 1; justify-content: center;
+  padding: 9px 16px; background: var(--navy-800); border: none;
+  border-radius: var(--radius-md); font-size: 13px; font-weight: 500;
+  color: #fff; transition: background var(--transition);
+}
+.connectBtn:hover { background: var(--navy-700); }
+.connectBtn:disabled { opacity: 0.6; }
+
+/* DB info */
+.dbInfo { display:flex; align-items:flex-start; gap:10px; padding:10px 0; border-bottom:1px solid var(--border); }
+.dbInfo:last-of-type { border-bottom: none; margin-bottom: 12px; }
+
+.aiNote {
+  background: var(--navy-50); border: 1px solid var(--navy-100);
+  border-radius: var(--radius-md); padding: 12px; font-size: 12px;
+  color: var(--navy-800); line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+  .grid { grid-template-columns: 1fr; }
+  .formRow2 { grid-template-columns: 1fr; }
+}

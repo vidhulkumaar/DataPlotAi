@@ -1,0 +1,92 @@
+.header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:24px; }
+.title { font-size:20px; font-weight:600; color:var(--gray-900); letter-spacing:-0.02em; }
+.sub { font-size:13px; color:var(--gray-500); margin-top:3px; }
+.loading { display:flex; align-items:center; gap:10px; padding:48px; color:var(--gray-500); font-size:14px; }
+.errBox { display:flex; align-items:center; gap:8px; padding:16px; background:var(--danger-bg); color:var(--danger); border-radius:var(--radius-md); font-size:13px; }
+
+.viewBtn {
+  display:flex; align-items:center; gap:6px;
+  padding:9px 18px; background:var(--navy-800); color:#fff;
+  border:none; border-radius:var(--radius-md); font-size:13px; font-weight:500;
+  transition:background var(--transition);
+}
+.viewBtn:hover { background:var(--navy-700); }
+
+/* Progress card */
+.progressCard {
+  background:var(--white); border:1px solid var(--border);
+  border-radius:var(--radius-lg); padding:20px; margin-bottom:20px;
+}
+.progressHeader { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }
+.progressLabel { font-size:14px; font-weight:500; color:var(--gray-800); }
+.statusBadge { padding:3px 10px; border-radius:var(--radius-full); font-size:11px; font-weight:600; }
+.badgeGreen { background:var(--success-bg); color:var(--success); }
+.badgeBlue  { background:var(--info-bg); color:var(--info); }
+.badgeRed   { background:var(--danger-bg); color:var(--danger); }
+.progressBar { height:6px; background:var(--surface-2); border-radius:3px; overflow:hidden; }
+.progressFill { height:100%; background:var(--navy-800); border-radius:3px; transition:width 0.5s ease; }
+.progressFillRed { background:var(--danger); }
+.progressSub { font-size:12px; color:var(--gray-500); margin-top:8px; }
+
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; align-items:start; }
+
+/* Steps */
+.stepsCard {
+  background:var(--white); border:1px solid var(--border);
+  border-radius:var(--radius-lg); padding:20px;
+}
+.cardTitle { font-size:13px; font-weight:500; color:var(--gray-800); margin-bottom:14px; }
+.step { display:flex; align-items:flex-start; gap:12px; padding:12px 0; border-bottom:1px solid var(--border); }
+.step:last-child { border-bottom:none; padding-bottom:0; }
+.stepIcon { margin-top:1px; flex-shrink:0; }
+.iconDone    { color:var(--success); }
+.iconRunning { color:var(--info); }
+.iconError   { color:var(--danger); }
+.iconPending { color:var(--gray-300); }
+.stepBody { flex:1; }
+.stepLabel { font-size:13px; font-weight:500; color:var(--gray-700); margin-bottom:2px; }
+.stepLabelActive { color:var(--navy-700); }
+.stepDesc { font-size:11px; color:var(--gray-400); line-height:1.5; }
+.stepBadge { font-size:10px; font-weight:600; padding:2px 7px; border-radius:var(--radius-full); flex-shrink:0; text-transform:capitalize; }
+.badge_done    { background:var(--success-bg); color:var(--success); }
+.badge_running { background:var(--info-bg); color:var(--info); }
+.badge_error   { background:var(--danger-bg); color:var(--danger); }
+.badge_pending { background:var(--surface-2); color:var(--gray-400); }
+.miniProgress { height:2px; background:var(--border); border-radius:1px; margin-top:6px; overflow:hidden; }
+.miniProgressFill { height:100%; width:40%; background:var(--navy-500); border-radius:1px; }
+@keyframes indeterminate { 0%{transform:translateX(-100%)} 100%{transform:translateX(350%)} }
+
+/* Schema card */
+.schemaCard { background:var(--white); border:1px solid var(--border); border-radius:var(--radius-lg); padding:20px; margin-bottom:12px; }
+.aiSummary { background:var(--navy-50); border:1px solid var(--navy-100); border-radius:var(--radius-md); padding:12px; font-size:12px; color:var(--navy-800); line-height:1.6; margin-bottom:14px; font-style:italic; }
+.aiSummaryLabel { font-style:normal; font-weight:600; font-size:11px; color:var(--navy-600); margin-bottom:4px; }
+.schemaHeader { display:grid; grid-template-columns:1fr 80px 90px; gap:8px; font-size:10px; font-weight:600; color:var(--gray-400); text-transform:uppercase; letter-spacing:0.06em; padding:6px 0; border-bottom:1px solid var(--border); margin-bottom:4px; }
+.schemaRow { display:grid; grid-template-columns:1fr 80px 90px; gap:8px; padding:6px 0; border-bottom:1px solid var(--border); align-items:center; }
+.schemaRow:last-of-type { border-bottom:none; }
+.colName { font-size:12px; font-weight:500; color:var(--gray-800); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.colType { font-size:11px; color:var(--gray-400); font-family:var(--font-mono); }
+.roleBadge { font-size:10px; font-weight:600; padding:2px 7px; border-radius:var(--radius-full); text-align:center; }
+.roleMetric { background:var(--info-bg); color:var(--info); }
+.roleDim    { background:var(--success-bg); color:var(--success); }
+.roleSkip   { background:var(--surface-2); color:var(--gray-400); }
+.moreRows { font-size:11px; color:var(--gray-400); padding:8px 0; }
+
+.chartsTitle { display:flex; align-items:center; gap:6px; font-size:12px; font-weight:500; color:var(--gray-700); margin:14px 0 8px; border-top:1px solid var(--border); padding-top:14px; }
+.chartRow { display:flex; align-items:flex-start; gap:10px; padding:8px 0; border-bottom:1px solid var(--border); }
+.chartRow:last-child { border-bottom:none; }
+.chartIcon { font-size:18px; flex-shrink:0; }
+.chartTitle { font-size:12px; font-weight:500; color:var(--gray-800); }
+.chartReason { font-size:11px; color:var(--gray-500); margin-top:2px; line-height:1.4; }
+
+/* Ready card */
+.readyCard {
+  background:var(--white); border:1px solid var(--success); border-radius:var(--radius-lg);
+  padding:24px; text-align:center; display:flex; flex-direction:column; align-items:center; gap:8px;
+}
+.readyIcon { color:var(--success); }
+.readyTitle { font-size:15px; font-weight:600; color:var(--gray-900); }
+.readySub { font-size:12px; color:var(--gray-500); margin-bottom:4px; }
+.chatBtn { background:none; border:none; font-size:12px; color:var(--navy-500); font-weight:500; transition:color var(--transition); }
+.chatBtn:hover { color:var(--navy-700); }
+
+@media (max-width:900px) { .grid { grid-template-columns:1fr; } }
