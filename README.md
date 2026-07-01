@@ -359,5 +359,4 @@ Each user's Superset dashboards are accessed via short-lived guest tokens, ensur
 ---
 
 ## License
-
-MIT
+VIDHUL KUMAAR V
